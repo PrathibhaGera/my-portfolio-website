@@ -1,0 +1,55 @@
+.about-me-container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(234, 234, 241);
+  padding: 20px;
+  background-image: linear-gradient(
+    to left,
+    rgb(41, 39, 39),
+    black,
+    rgb(17, 17, 17)
+  );
+  font-family: "Times New Roman", Times, serif;
+}
+
+@media screen and(min-width:768px) {
+  .about-me-section {
+    height: 80vh;
+    justify-content: center;
+    max-width: 100%;
+  }
+}
+
+.aboutme-heading {
+  padding-top: 20px;
+  color: rgb(64, 236, 199);
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: Bold;
+}
+
+.about-me-description {
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 700px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-me-description {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 800px;
+  }
+}
+
+.qualification-title{
+  color: rgb(25, 230, 186);
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+  padding-bottom: 10px;
+}

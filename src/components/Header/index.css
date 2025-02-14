@@ -1,0 +1,21 @@
+
+.logo{
+    font-family: cursive;
+    font-weight: 600;
+}
+
+.logo:hover{
+  color: rgb(19, 207, 198);
+}
+.navbar-items{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23px;
+    color: #fff;
+}
+
+.navbar-items:hover{
+    color: rgb(35, 235, 235);
+    font-weight: 700;
+    text-decoration: underline;
+   
+}
