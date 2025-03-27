@@ -1,19 +1,62 @@
-.portfolio-heading {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 30px;
-  font-style: italic;
+.my-project-bg-container {
+  background-color: #1a1a1a;
+}
+.project-card {
+  background-color: #1a1a1a; /* Dark background */
+  width: 320px;
+  padding: 0px;
+  border-radius: 15px;
+  border: 3px solid transparent; /* Initially transparent border */
+  box-shadow: 4px 6px 15px rgba(0, 255, 255, 0.1); /* Subtle cyan glow */
   text-align: center;
-  padding-top: 20px;
-  font-weight: bold;
-  color: rgb(10, 118, 219);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+    border 0.3s ease-in-out;
 }
 
-.project-title-heading {
-  list-style-type: none;
-  font-size: 20px;
-  padding-top: 10px;
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 25px rgba(0, 255, 255, 0.4); /* Glowing effect */
+  border: 3px solid #08ddd2; /* Bright border on hover */
 }
 
-.anchor-el {
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project-card:hover .project-image {
+  opacity: 0.8;
+}
+
+.project-title-heading a {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  color: #08ddd2; 
+  font-family: "Times New Roman", Times, serif;
   text-decoration: none;
+}
+
+.project-description {
+  color: #d3d3d3; 
+  font-size: 1rem;
+  margin: 10px 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.project-links a {
+  display: inline-block;
+  margin: 5px;
+  color: #08ddd2;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.project-links a:hover {
+  color: #00ffff; /* Brighter cyan */
+  text-decoration: underline;
 }

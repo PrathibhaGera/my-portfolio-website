@@ -7,6 +7,11 @@ const About = () => {
       <Header />
       <div className="about-me-container">
         <h1 className="aboutme-heading">About Me </h1>
+        <img
+          src="https://res.cloudinary.com/drdkzqqhn/image/upload/v1739616173/WhatsApp_Image_2025-02-15_at_16.12.23_y1uujb.jpg"
+          alt="profile"
+          className="profile"
+        />
         <p className="about-me-description">
           Hi, I'm Prathibha, a passionate Front-End Developer with expertise in
           HTML, CSS, JavaScript, React.js, Node.js, Bootstrap, and SQL. I love

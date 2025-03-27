@@ -9,7 +9,9 @@
   );
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
+
 @media screen and (min-width: 768px) {
   .hero-section {
     display: flex;
@@ -35,6 +37,8 @@
 }
 .name {
   color: rgb(70, 228, 207);
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
 }
 .role {
   color: #5ce6eb;
@@ -46,65 +50,71 @@
   border-radius: 50%;
   border-color: #007bff;
   border: 10px solid rgb(20, 221, 228);
+  margin-top: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .profile {
+    margin: 0px;
+  }
+}
 .see-more-btn {
   padding: 10px;
   border: 0px solid rgb(81, 223, 216);
   background-color: #139791;
   color: #ffffff;
   text-align: center;
-  font-family:'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   margin-top: 30px;
+  margin-bottom: 30px;
   border-radius: 5px;
-  padding-left:10px;
+  padding-left: 10px;
   padding-right: 10px;
   width: 100px;
 }
 
 /* About Me Section */
 .about-me-section {
-  background-image: linear-gradient(
-    to left,
-    rgb(37, 37, 37),
-    black,
-    rgb(26, 25, 25)
-  );
-  max-width: 100%;
+  background-image: linear-gradient(to left, rgb(37, 37, 37), black, rgb(26, 25, 25));
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: aliceblue;
-  padding: 20px;
-}
-
-@media screen and(min-width:768px) {
-  .about-me-section {
-    height: 80vh;
-    justify-content: center;
-    max-width: 100%;
-  }
+  padding: 40px 20px; 
+  text-align: center; 
 }
 
 .about-me-heading {
   padding-top: 20px;
   color: rgb(70, 228, 207);
   font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
 }
 
 .about-me-description {
-  padding-left: 30px;
-  padding-right: 30px;
-  width: 400px;
+  max-width: 90%; 
+  padding: 10px 20px; 
+  margin-bottom: 15px; 
+  font-size: 1rem;
+  line-height: 1.6; 
 }
 
+/* For tablets and larger screens */
 @media screen and (min-width: 768px) {
+  .about-me-section {
+    height: auto; 
+    justify-content: center;
+    width: 100%;
+  }
+
   .about-me-description {
-    padding-left: 80px;
-    padding-right: 80px;
-    width: 800px;
+    max-width: 700px; 
+    padding: 20px;
+    font-size: 1.3rem;
   }
 }
+
 
 /* Skills Section */
 .my-skills-heading {
@@ -314,16 +324,21 @@
   color: #08ddd2;
   font-family: "Times New Roman", Times, serif;
   padding-top: 20px;
+  font-weight: 600;
 }
 
 .contact-container-alt {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 25px;
 }
-
+@media screen and (min-width:768px) {
+  .contact-container-alt{
+    flex-direction: row;
+  }
+}
 .contact-info-alt {
   display: flex;
   align-items: center;
@@ -341,7 +356,7 @@
   color: #d9e0ee;
   font-weight: bold;
 }
-.contact-info-alt span:hover{
+.contact-info-alt span:hover {
   color: #34c3eb;
 }
 .contact-info-alt a {

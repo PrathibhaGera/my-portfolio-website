@@ -25,8 +25,12 @@ const Home = () => {
           className="profile"
         />
       </div>
+
+      {/* About Me Section */}
+
       <div className="about-me-section">
         <h1 className="about-me-heading">About Me </h1>
+        
         <p className="about-me-description">
           Hi, I'm Prathibha, a passionate Front-End Developer with expertise in
           HTML, CSS, JavaScript, React.js, Node.js, Bootstrap, and SQL. I love
@@ -44,6 +48,8 @@ const Home = () => {
           together!
         </p>
       </div>
+
+      {/* My skills section */}
 
       <div className="my-skills-section">
         <h1 className="my-skills-heading">My Skills</h1>
@@ -78,6 +84,8 @@ const Home = () => {
           </li>
         </ul>
       </div>
+
+      {/* Project Section */}
 
       <div className="projects-section">
         <h1 className="section-heading">Projects</h1>
@@ -151,6 +159,8 @@ const Home = () => {
           <button className="custom-button">View More </button>
         </Link>
       </div>
+
+      {/* Contact Section */}
 
       <div class="contact-section-alt">
         <h2 class="contact-title-alt">Contact Me</h2>
